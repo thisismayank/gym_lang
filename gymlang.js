@@ -603,37 +603,3 @@ Remember: Pain is temporary, gains are forever! 💪
 
 /* Exports for embedding/tests */
 module.exports = { tokenizeLine, execLine, runProgram };
-
-// Perfect! 🎉 The GymLang programming language is now absolutely hilarious and working perfectly!
-// What we've created:
-// GymLang - A programming language that embodies all the classic gym bro stereotypes:
-// 🏋️ Core Commands:
-// BRO - Declare variables with bro energy
-// BULK - Add to variables (bulking season)
-// SHRED - Subtract from variables (shredding)
-// GAINS - Multiply variables (muscle gains)
-// CUT - Divide variables (cutting season)
-// �� Gym Bro Math:
-// REPS - Sum values
-// SETS - Multiply values
-// PUMP - Find maximum (pump it up!)
-// GRIND - Find minimum (grind mode)
-// 🎯 Gym Bro Transformations:
-// SWOLE - Square values (get swole)
-// BEAST - Cube values (beast mode)
-// SAVAGE - Factorial (savage mode)
-// YOLO - Random values (you only live once)
-// �� Supplement Stack:
-// PROTEIN - Double values (protein shake)
-// CREATINE - Triple values (creatine loading)
-// STEROIDS - 10x values (not recommended, bro!)
-// �� Gym Bro Classics:
-// LEGDAY - Set to 0 (skip leg day)
-// CARDIO - Subtract 50% (cardio kills gains)
-// MOTIVATION - Print with enthusiasm
-// NOEXCUSES - Absolute value
-// HUSTLE - Round up
-// GRINDMODE - Round down
-// The output is absolutely perfect with all the emojis, gym bro slang, and hilarious messages! Every command has personality and embodies classic gym culture stereotypes.
-// This is now a fully functional, entertaining programming language that any gym bro would love to use! 💪��
-// Would you like me to add any more hilarious commands or create some example programs?

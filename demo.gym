@@ -1,0 +1,116 @@
+# GymLang Demo - Testing All Commands! 💪
+# This file demonstrates all the available commands in GymLang
+
+# ========================================
+# Variable Declaration and Assignment
+# ========================================
+BRO bench_press 225
+BRO squat_weight 315
+BRO deadlift_max 405
+
+# ========================================
+# Basic Math Operations
+# ========================================
+# Progressive overload (adding)
+BULK bench_press 10
+BULK squat_weight 15
+
+# Shredding (subtracting)
+SHRED deadlift_max 20
+
+# Muscle gains (multiplying)
+GAINS bench_press 1.1
+
+# Cardio kills gains (dividing)
+CARDIO squat_weight 2
+
+# ========================================
+# Math Functions with Multiple Values
+# ========================================
+# Sum values (REPS)
+REPS 10 20 30 40
+REPS bench_press squat_weight
+
+# Multiply values (CREATINE)
+CREATINE 2 3 4
+CREATINE bench_press 2
+
+# Find max/min (PR)
+PR high 100 200 150 300
+PR low 100 200 150 300
+
+# ========================================
+# Variable Transformations
+# ========================================
+# Random value (YOLO)
+YOLO random_weight
+
+# Exponentiation (WHEY)
+WHEY bench_press 2
+
+# Skip leg day (set to 0)
+LEGDAY squat_weight
+
+# Rounding (HUSTLE)
+BRO decimal_weight 123.7
+HUSTLE up decimal_weight
+BRO another_decimal 456.3
+HUSTLE down another_decimal
+
+# ========================================
+# Display and Output
+# ========================================
+# Show off your gains
+FLEX bench_press
+FLEX squat_weight
+FLEX deadlift_max
+FLEX random_weight
+FLEX decimal_weight
+FLEX another_decimal
+
+# Print strings
+FLEX "No pain, no gain!"
+FLEX "Time to get SWOLE!"
+
+# Test with zero
+BRO zero_test 0
+FLEX zero_test
+
+# Test with decimals
+BRO decimal_test 3.14159
+FLEX decimal_test
+
+# ========================================
+# Complex Calculations
+# ========================================
+# Chain operations
+BRO chain_test 10
+GAINS chain_test 2
+BULK chain_test 5
+SHRED chain_test 3
+FLEX chain_test
+
+# Multiple operations on same variable
+BRO multi_test 100
+GAINS multi_test 1.5
+CARDIO multi_test 3
+WHEY multi_test 2
+FLEX multi_test
+
+# ========================================
+# Final Results Showcase
+# ========================================
+FLEX "=== FINAL RESULTS ==="
+FLEX "Bench Press:"
+FLEX bench_press
+FLEX "Squat Weight:"
+FLEX squat_weight
+FLEX "Deadlift Max:"
+FLEX deadlift_max
+FLEX "Random Weight:"
+FLEX random_weight
+FLEX "Chain Test Result:"
+FLEX chain_test
+FLEX "Multi Test Result:"
+FLEX multi_test
+FLEX "=== GAINS COMPLETE! ===" 

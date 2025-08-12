@@ -25,8 +25,8 @@
 
 "use strict";
 
-const { tokenizeLine } = require("./src/tokeniser.js");
-const { interpreter } = require("./src/interpreter.js");
+const { lineTokeniser } = require("./src/tokeniser.js");
+const { lineInterpreter } = require("./src/interpreter.js");
 const { pathHandler } = require("./lib/pathHandler.js");
 
 /* =========================
@@ -38,8 +38,8 @@ function runProgram(text) {
   for (let ln = 0; ln < lines.length; ln++) {
     const line = lines[ln];
     try {
-      const tokensedLine = tokenizeLine(line);
-      interpreter(tokensedLine, env);
+      const tokensedLine = lineTokeniser(line);
+      lineInterpreter(tokensedLine, env);
     } catch (e) {
       // enrich error with line number/context
       const where = `Line ${ln + 1}: ${line.trim()}`;

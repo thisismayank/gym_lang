@@ -37,14 +37,14 @@ BULK squat 15
 
 # Get those gains!
 GAINS bench 1.5
-SWOLE bench
+WHEY bench 2
 
 # Show off your progress
 FLEX bench
 FLEX squat
 
 # Some motivation
-MOTIVATION "No pain, no gain"
+FLEX "No pain, no gain"
 ```
 
 ## 🏋️ Core Commands
@@ -55,36 +55,23 @@ MOTIVATION "No pain, no gain"
 - `BULK <name> <value>` - Add to variable (bulking season)
 - `SHRED <name> <value>` - Subtract from variable (shredding)
 - `GAINS <name> <value>` - Multiply variable (muscle gains)
-- `CUT <name> <value>` - Divide variable (cutting season)
+- `CARDIO <name> <value>` - Divide variable (cardio kills gains)
 
 ### Math Operations
 
 - `REPS <vals...>` - Sum values
-- `SETS <vals...>` - Multiply values
-- `PUMP <vals...>` - Find maximum (pump it up!)
-- `GRIND <vals...>` - Find minimum (grind mode)
+- `CREATINE <vals...>` - Multiply values
+- `PR <high/low> <vals...>` - Find maximum/minimum (pump it up!)
 
 ### Transformations
 
-- `SWOLE <name>` - Square value (get swole)
-- `BEAST <name>` - Cube value (beast mode)
-- `SAVAGE <name>` - Factorial (savage mode)
 - `YOLO <name>` - Random value (you only live once)
-
-### Supplements
-
-- `PROTEIN <name>` - Double value (protein shake)
-- `CREATINE <name>` - Triple value (creatine loading)
-- `STEROIDS <name>` - 10x value (not recommended, bro!)
-
-### Gym Bro Classics
-
+- `WHEY <name> <value>` - Exponentiation (get whey!)
 - `LEGDAY <name>` - Set to 0 (skip leg day)
-- `CARDIO <name>` - Subtract 50% (cardio kills gains)
-- `MOTIVATION <"str">` - Print with enthusiasm
-- `NOEXCUSES <name>` - Absolute value
-- `HUSTLE <name>` - Round up
-- `GRINDMODE <name>` - Round down
+- `HUSTLE <up/down> <name>` - Round up/down (hustle harder)
+
+### Output
+
 - `FLEX <value|name|"str">` - Print value (show off)
 
 ## 📚 Examples
@@ -101,8 +88,8 @@ BULK bench 5
 BULK squat 10
 
 # Get swole
-SWOLE bench
-PROTEIN squat
+WHEY bench 2
+GAINS squat 1.5
 
 # Show results
 FLEX bench
@@ -117,14 +104,43 @@ BRO y 5
 
 # Bro math operations
 REPS x y 15
-SETS x y 3
-PUMP x y 20
-GRIND x y 5
+CREATINE x y 3
+PR high x y 20
+PR low x y 5
 
 # Transformations
-BEAST x
-SAVAGE y
+WHEY x 3
 YOLO random
+```
+
+### Complex Workout Tracking
+
+```gym
+# Initialize workout variables
+BRO bench_press 225
+BRO squat_weight 315
+BRO deadlift_max 405
+
+# Progressive overload
+BULK bench_press 10
+BULK squat_weight 15
+SHRED deadlift_max 20
+
+# Calculate total volume
+REPS bench_press squat_weight deadlift_max
+
+# Get those gains
+GAINS bench_press 1.1
+WHEY squat_weight 2
+
+# Round up for next session
+HUSTLE up bench_press
+
+# Show off results
+FLEX "=== WORKOUT COMPLETE ==="
+FLEX bench_press
+FLEX squat_weight
+FLEX deadlift_max
 ```
 
 ## 🎯 Features
@@ -142,7 +158,7 @@ Want to add more gym bro commands? Fork this repo and submit a pull request!
 ### Adding New Commands
 
 1. Fork the repository
-2. Add your command to the `execLine` function in `gymlang.js`
+2. Add your command to the interpreter in `src/interpreter.js`
 3. Update the documentation
 4. Submit a pull request
 

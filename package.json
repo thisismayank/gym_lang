@@ -1,6 +1,6 @@
 {
   "name": "gymlang",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A programming language for gym bros, by gym bros. Where every program is a gains program! 💪",
   "main": "gymlang.js",
   "bin": {
